@@ -2,13 +2,14 @@
 
 internal class Musica
 {
+
+    public string Nome { get; set; }
+    public int Id { get; set; }
+
     public Musica(string nome)
     {
         Nome = nome;
     }
-
-    public string Nome { get; set; }
-    public int Id { get; set; }
 
     public void ExibirFichaTecnica()
     {
