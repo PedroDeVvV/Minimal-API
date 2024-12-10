@@ -3,11 +3,8 @@ using ScreenSound.Modelos;
 using ScreenSound.Database;
 
 var context = new ScreenSoundContext();
-var coldplay = new Artista("Coldplay", "Viva la vida");
 var artistaDAL = new DAL<Artista>(context);
-
-
-var musicaDAL = new MusicaDAL(context);
+var musicaDAL = new DAL<Musica>(context);
 
 Musica vivaLaVida = new Musica("Viva la Vida");
 musicaDAL.Adicionar(vivaLaVida);
