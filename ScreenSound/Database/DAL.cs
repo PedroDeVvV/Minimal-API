@@ -35,10 +35,9 @@ namespace ScreenSound.Database
         {
             return context.Set<T>().FirstOrDefault(condition);
         }
-
-        public T? RecuperarPorAno(int year)
+        public IEnumerable<T> ListarPor(Func<T, bool> condicao)
         {
-            return context.Set<T>().FirstOrDefault();
+            return context.Set<T>().Where(condicao);
         }
     }
 }
