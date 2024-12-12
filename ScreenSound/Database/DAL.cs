@@ -35,5 +35,10 @@ namespace ScreenSound.Database
         {
             return context.Set<T>().FirstOrDefault(condition);
         }
+
+        public T? RecuperarPorAno(int year)
+        {
+            return context.Set<T>().FirstOrDefault();
+        }
     }
 }

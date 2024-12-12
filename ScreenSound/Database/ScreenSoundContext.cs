@@ -9,12 +9,12 @@ namespace ScreenSound.Database
         public DbSet<Artista> Artistas {  get; set; }
         public DbSet<Musica> Musicas { get; set; }
         private string _connectionString = "Data Source=(localdb)\\MSSQLLocalDB" +
-            ";Initial Catalog=ScreenSoundV0;Integrated Security=True;Encrypt=False;" +
+            ";Initial Catalog=ScreenSoundV1;Integrated Security=True;Encrypt=False;" +
             "Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(_connectionString);
+            optionsBuilder.UseSqlServer(_connectionString).UseLazyLoadingProxies();
         }
     }
 }
