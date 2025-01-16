@@ -1,6 +1,6 @@
 ﻿using ScreenSound.Modelos;
 
-namespace ScreenSound.Shared.Modelos.Modelos
+namespace ScreenSound.Shared.MOdelos.Modelos
 {
     public class Genero
     {

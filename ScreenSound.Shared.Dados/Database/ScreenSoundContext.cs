@@ -1,7 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using ScreenSound.Modelos;
-using ScreenSound.Shared.Modelos.Modelos;
+using ScreenSound.Shared.MOdelos.Modelos;
 
 namespace ScreenSound.Database
 {
